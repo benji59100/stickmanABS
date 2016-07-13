@@ -25,6 +25,7 @@ class cStickmanArena
 			foreach($j>=24;$i++)
 			{
 				$cell[$i][$j] = new cCell($i,$j);
+				//tryng something
 			}
 		}
 	}
