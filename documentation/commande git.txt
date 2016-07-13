@@ -1,0 +1,83 @@
+echo "# stickmanABS" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/benji59100/stickmanABS.git
+git push -u origin master
+
+
+
+
+git remote add origin https://github.com/benji59100/stickmanABS.git
+git push -u origin master
+
+
+
+
+GUIDE GIT: 
+
+
+
+http://rogerdudler.github.io/git-guide/index.fr.html
+
+créer dépot : git init
+
+
+
+cloner un dépôt
+
+créez une copie de votre dépôt local en exécutant la commande
+
+git clone /path/to/repository
+
+si vous utilisez un serveur distant, cette commande sera
+
+git clone username@host:/path/to/repository
+
+
+arbres
+
+votre dépôt local est composé de trois "arbres" gérés par git. le premier est votre espace de travail qui contient réellement vos fichiers. le second est un Index qui joue un rôle d'espace de transit pour vos fichiers et enfin HEAD qui pointe vers la dernière validation que vous ayez fait.
+ajouter & valider
+
+Vous pouvez proposer un changement (l'ajouter à l'Index) en exécutant les commandes
+
+git add <filename>
+git add *
+
+C'est la première étape dans un workflow git basique. Pour valider ces changements, utilisez
+
+git commit -m "Message de validation"
+
+Le fichier est donc ajouté au HEAD, mais pas encore dans votre dépôt distant.
+
+envoyer des changements
+
+Vos changements sont maintenant dans le HEAD de la copie de votre dépôt local. Pour les envoyer à votre dépôt distant, exécutez la commande
+
+git push origin master
+
+Remplacez master par la branche dans laquelle vous souhaitez envoyer vos changements.
+
+Si vous n'avez pas cloné votre dépôt existant et voulez le connecter à votre dépôt sur un serveur distant, vous devez l'ajouter avec
+
+git remote add origin <server>
+
+Maintenant, vous pouvez envoyer vos changements vers le serveur distant sélectionné
+
+Exemple : 
+
+pour proposer un chagement mais ne pas faire de modification -> git add <lenomdufichier>
+
+
+ou git add * pour tout changer ( mais à ne pas faire !!!).
+
+
+--------------------------------------------------------------
+
+
+Ligne de commande principale :  MEILLEUR CHOSE A SAVOIR
+
+
+https://gist.github.com/aquelito/8596717
+
