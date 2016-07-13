@@ -60,13 +60,16 @@
       <!-- Example row of columns -->
       <p style="text-align: center;"><img src="img/banniere.png" name="img" id="img"></p>
       <div class="form-group">
-        <h2>Inscription</h2>
-        <input type="text" class="form-control" size="20" id="username" name="username"/><br>
-        <input type="text" class="form-control" size="20" id="password" name="password"/><br>
-        <input type="text" class="form-control" size="20" id="pseudo" name="pseudo"/><br>
-        <input type="email" class="form-control" size="20" id="email" name="email"/><br>
-      </div>
-
+        <form class="form-group" method="post">
+          <div class="form-group">
+            <h2>Inscription:</h2>
+            Username:<input type="text" class="form-control" size="20" id="username" name="username" placeholder="Username"/><br>
+            Password:<input type="text" class="form-control" size="20" id="password" name="password" placeholder="Password"/><br>
+            Pseudo:<input type="text" class="form-control" size="20" id="pseudo" name="pseudo" placeholder="Pseudo"/><br>
+            E-mail:<input type="email" class="form-control" size="20" id="email" name="email" placeholder="E-mail"/><br>
+          </div>
+          <button type="submit" class="btn btn-success">Sign up</button>
+        </form>
       <hr>
 
       <footer>
