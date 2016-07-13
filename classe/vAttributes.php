@@ -10,7 +10,7 @@ interface vAttributes
 	public $iMax;
 	public $iMin;
 	public $eType;
-	const $eType = array('strength','life');
+	public const $eType = array('strength','life');
 
 	function __construct(argument)
 	{

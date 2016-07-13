@@ -11,9 +11,22 @@ class cStickmanArena
 	private $iMinStickman;
 	private $iMaxStickman;
 	
-	function __construct(argument)
+	function __construct()
 	{
-		# code...
+
+		$iSizeArenaHeight=24;
+		$iSizeArenaWidth=24;
+		$iMaxStickman=24;
+		$iMinStickman=8;
+		$i=0;
+		$j=0;
+		foreach($i>=24;$i++)
+		{
+			foreach($j>=24;$i++)
+			{
+				$cell[$i][$j] = new cCell($i,$j);
+			}
+		}
 	}
 
 	public function SpawnStickmen()
