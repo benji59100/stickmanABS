@@ -1,0 +1,16 @@
+-Création de la base de données avec les champs utilisateurs.
+
+
+Login/MDP/Pseudo/mail
+
+-Création de la classe cConnexion.php qui va nous connecter à la base de donnée.
+
+-Script de vérification des identifiants de connexion.
+
+
+-Création d'un fichier ini.php qui va charger toutes les dépendances du projet à la connexion de l'utilisateur(classe/bibliothèque/javascript)
+
+-Création du script de connexion à la base de donnée.
+
+
+-
