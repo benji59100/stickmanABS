@@ -15,7 +15,7 @@ class cStickman
 	public $iVictories;
 	public $iDeafeats;
 
-	function __construct(argument)
+	function __construct()
 	{
 		# code...
 	}

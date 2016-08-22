@@ -6,7 +6,7 @@
 	{
 		public $iIdWeapon;
 		public $iDamage;
-		function __construct(argument)
+		function __construct()
 		{
 			# code...
 		}
