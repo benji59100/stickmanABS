@@ -12,7 +12,7 @@ interface vAttributes
 	public $eType;
 	public const $eType = array('strength','life');
 
-	function __construct(argument)
+	function __construct()
 	{
 		# code...
 	}

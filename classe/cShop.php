@@ -9,7 +9,7 @@ class cShop
 	public $aovItemsWeed = array();
 	public $aovAttributes = array();
 
-	function __construct(argument)
+	function __construct()
 	{
 		# code...
 	}

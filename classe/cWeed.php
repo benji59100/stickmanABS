@@ -7,7 +7,7 @@
 	{
 		public $iIdPotion;
 		public $iHeal;
-		function __construct(argument)
+		function __construct()
 		{
 			# code...
 		}
