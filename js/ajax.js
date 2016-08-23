@@ -28,7 +28,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#form-inscription').on('submit', function(e) {
+    $('#form-connexion').on('submit', function(e) {
         e.preventDefault(); // J'empêche le comportement par défaut du navigateur, c-à-d de soumettre le formulaire
  
         var $this = $(this); // L'objet jQuery du formulaire
@@ -47,7 +47,7 @@ $(document).ready(function() {
                 type: $this.attr('method'), // La méthode indiquée dans le formulaire (get ou post)
                 data: $this.serialize(), // Je sérialise les données (j'envoie toutes les valeurs présentes dans le formulaire)
                 success: function(html) { // Je récupère la réponse du fichier PHP
-                    alert(html); // J'affiche cette réponse
+                    console.log(html); // J'affiche cette réponse
                 }
             });
         }

@@ -1,18 +1,23 @@
 <?php 
 include("../includes/ini.php");
 
-if(isset($_POST['login'],$_POST['pwd']))
+if((isset($_POST['login'],$_POST['pwd'])) && ($_POST['login'] !="" || $_POST['pwd']!= ""))
 {
 	$username = $_POST['login'];
-	$password = $_POST['pwd'];	
-    
-    if("SELECT * FROM compte WHERE Username=$username AND Password=$password")
+	$password = $_POST['pwd'];
+    $verif = $connexion->prepare("SELECT * FROM compte WHERE Username = '$username' AND Password = '$password'");
+    $verif->execute();
+    $resultat = $verif->fetch();
+    $login = $resultat['Username'];
+    $pwd = $resultat['Password'];
+    if($pwd == $password && $login == $username)
     {
+        session_start();
         $reponse = 'OK';
     }
     else
     {
-        $reponse = 'Un champ est eronné';
+        $reponse = 'echec';
     }
 }
 else 
