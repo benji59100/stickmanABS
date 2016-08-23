@@ -53,19 +53,17 @@
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
-    <!-- paiejgakjguihagj !-->
-    <!-- deuxième test pour git !-->
     <!-- Main jumbotron for a primary marketing message or call to action -->
     
     <div class="container">
       <!-- Example row of columns -->
       <p style="text-align: center;"><img src="img/banniere.png" name="img" id="img"></p>
       <div class="form-group">
-        <form class="form-group" action="inscription.php" method="post">
+        <form id="form-inscription" class="form-group" action="script/inscription.php"  method="post">
           <div class="form-group">
             <h2>Inscription:</h2>
             Username:<input type="text" class="form-control" size="20" id="username" name="username" placeholder="Username"/><br>
-            Password:<input type="text" class="form-control" size="20" id="password" name="password" placeholder="Password"/><br>
+            Password:<input type="password" class="form-control" size="20" id="password" name="password" placeholder="Password"/><br>
             Pseudo:<input type="text" class="form-control" size="20" id="pseudo" name="pseudo" placeholder="Pseudo"/><br>
             E-mail:<input type="email" class="form-control" size="20" id="email" name="email" placeholder="E-mail"/><br>
           </div>
@@ -76,8 +74,9 @@
       <footer>
         <p>&copy; StickMan Company 2016</p>
       </footer>
-    </div> <!-- /container -->        
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </div> <!-- /container -->      
+    <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+    <script src="js/ajax.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
