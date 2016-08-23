@@ -1,7 +1,7 @@
 <?php 
 include("../includes/ini.php");
 
-if(isset($_POST['username'] && $_POST['password'] && $_POST['pseudo'] && $_POST['email']))
+if(isset($_POST['username'],$_POST['password'],$_POST['pseudo'],$_POST['email']))
 {
 	$username = $_POST['username'];
 	$password = $_POST['password'];
