@@ -1,5 +1,5 @@
 <?php 
-//include("../includes/ini.php");
+include("../includes/ini.php");
 
 if(isset($_POST['username'],$_POST['password'],$_POST['pseudo'],$_POST['email']))
 {
