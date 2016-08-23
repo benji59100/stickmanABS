@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 22 Août 2016 à 16:30
+-- Généré le :  Mar 23 Août 2016 à 09:54
 -- Version du serveur :  10.1.13-MariaDB
 -- Version de PHP :  5.5.37
 
@@ -49,6 +49,13 @@ CREATE TABLE `compte` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Contenu de la table `compte`
+--
+
+INSERT INTO `compte` (`idCompte`, `Username`, `Password`, `Pseudo`, `Email`) VALUES
+(1, 'Michel', 'michel', 'michel', 'michel@gmail.com');
+
+--
 -- Index pour les tables exportées
 --
 
@@ -77,7 +84,7 @@ ALTER TABLE `champion`
 -- AUTO_INCREMENT pour la table `compte`
 --
 ALTER TABLE `compte`
-  MODIFY `idCompte` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idCompte` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
