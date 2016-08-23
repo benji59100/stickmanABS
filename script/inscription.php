@@ -8,7 +8,7 @@ if(isset($_POST['username'],$_POST['password'],$_POST['pseudo'],$_POST['email'])
         
         
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
         $pseudo = $_POST['pseudo'];
         $email = $_POST['email'];
         

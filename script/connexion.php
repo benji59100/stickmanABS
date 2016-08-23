@@ -4,7 +4,7 @@ include("../includes/ini.php");
 if((isset($_POST['login'],$_POST['pwd'])) && ($_POST['login'] !="" || $_POST['pwd']!= ""))
 {
 	$username = $_POST['login'];
-	$password = $_POST['pwd'];
+	$password = md5($_POST['pwd']);
     $verif = $connexion->prepare("SELECT * FROM compte WHERE Username = '$username' AND Password = '$password'");
     $verif->execute();
     $resultat = $verif->fetch();
