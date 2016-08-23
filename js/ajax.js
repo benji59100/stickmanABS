@@ -22,7 +22,7 @@ $(document).ready(function() {
                 type: $this.attr('method'), // La méthode indiquée dans le formulaire (get ou post)
                 data: $this.serialize(), // Je sérialise les données (j'envoie toutes les valeurs présentes dans le formulaire)
                 success: function(html) { // Je récupère la réponse du fichier PHP
-                    alert(html); // J'affiche cette réponse
+                    console.log(html); // J'affiche cette réponse
                 }
             });
         }
