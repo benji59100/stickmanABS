@@ -4,7 +4,7 @@ include("../includes/ini.php");
 if((isset($_POST['login'],$_POST['pwd'])) && ($_POST['login'] !="" || $_POST['pwd']!= ""))
 {
 	$username = $_POST['login'];
-	$password = md5($_POST['pwd']);
+	$password = sha1($_POST['pwd']);
     $verif = $connexion->prepare("SELECT * FROM compte WHERE Username = '$username' AND Password = '$password'");
     $verif->execute();
     $resultat = $verif->fetch();
@@ -12,8 +12,11 @@ if((isset($_POST['login'],$_POST['pwd'])) && ($_POST['login'] !="" || $_POST['pw
     $pwd = $resultat['Password'];
     if($pwd == $password && $login == $username)
     {
+        // on est connecter , on ouvre la session et on stock les données de l'utilisateurs dans la session et on redirige.
+        $reponse = 'ok';
         session_start();
-        $reponse = 'OK';
+        $_SESSION['id'] = $resultat['idCompte'];
+        $_SESSION['pseudo'] = $resultat['Pseudo'];
     }
     else
     {

@@ -8,7 +8,7 @@ if(isset($_POST['username'],$_POST['password'],$_POST['pseudo'],$_POST['email'])
         
         
         $username = $_POST['username'];
-        $password = md5($_POST['password']);
+        $password = sha1($_POST['password']);
         $pseudo = $_POST['pseudo'];
         $email = $_POST['email'];
         
@@ -18,7 +18,7 @@ if(isset($_POST['username'],$_POST['password'],$_POST['pseudo'],$_POST['email'])
         
         if(count($resultat) != 0){
            
-            $reponse = 'Compte deja utilise';
+            $reponse = 'echec';
         }
         else{
         $reqInscription = $connexion->prepare("INSERT INTO compte VALUES ('', '$username', '$password', '$pseudo', '$email')");        
