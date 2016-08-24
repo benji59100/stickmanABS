@@ -48,12 +48,13 @@
             </div><!--/.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <nav class="navbar navbar-inverse navbar-lower" role="navigation">
+    <nav class="navbar navbar-inverse navbar-lower" id="navbar" role="navigation">
         <div class="container">
-            <div class="span10">
-                <div class="row">
-                    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-                </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Creer Stickman</button></div>
+                <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Rejoindre arene</button></div>
+                <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Profil</button></div>
+                <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Shop</button></div>
             </div>
         </div>
     </nav>
@@ -102,6 +103,5 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X','auto');ga('send','pageview');
     </script>
-        </div>
     </body>
 </html>
