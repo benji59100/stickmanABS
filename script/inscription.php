@@ -23,7 +23,6 @@ if(isset($_POST['username'],$_POST['password'],$_POST['pseudo'],$_POST['email'])
         else{
         $reqInscription = $connexion->prepare("INSERT INTO compte VALUES ('', '$username', '$password', '$pseudo', '$email')");        
         $reqInscription->execute();
-        
         $reponse = 'ok'; 
         }
         

@@ -14,7 +14,9 @@ $(document).ready(function() {
         // Je vérifie une première fois pour ne pas lancer la requête HTTP
         // si je sais que mon PHP renverra une erreur
         if(username === '' || password === '' || pseudo === '' || mail === '') {
-            alert('Les champs doivent êtres remplis');
+            $("#error-message").css('display','none');
+            $("#success-message").css('display','none');
+            $("#warning-message").css('display','block');
         } else {
             // Envoi de la requête HTTP en mode asynchrone
             $.ajax({
@@ -27,12 +29,16 @@ $(document).ready(function() {
                     {
                         console.log('echec');   
                         $("#success-message").css('display','none');
+                        $("#warning-message").css('display','none');
                         $("#error-message").css('display','block');
+                        
                     }
                     else
                     {   
                         $("#error-message").css('display','none');
+                        $("#warning-message").css('display','none');
                         $("#success-message").css('display','block');
+
                     }
                 }
             });
@@ -50,15 +56,27 @@ $(document).ready(function() {
         // Je vérifie une première fois pour ne pas lancer la requête HTTP
         // si je sais que mon PHP renverra une erreur
         if(username === '' || password === '') {
-            alert('Les champs doivent êtres remplis');
+            $("#error-message2").css('display','none');
+            $("#warning-message2").css('display','block');
         } else {
             // Envoi de la requête HTTP en mode asynchrone
             $.ajax({
                 url: $this.attr('action'), // Le nom du fichier indiqué dans le formulaire
                 type: $this.attr('method'), // La méthode indiquée dans le formulaire (get ou post)
-                data: $this.serialize(), // Je sérialise les données (j'envoie toutes les valeurs présentes dans le formulaire)
+                data: $this.serialize(),
+                dataType:'json', // Je sérialise les données (j'envoie toutes les valeurs présentes dans le formulaire)
                 success: function(html) { // Je récupère la réponse du fichier PHP
-                    console.log(html); // J'affiche cette réponse
+                    if(html.reponse == "echec")
+                    {
+                        console.log('echec');
+                        $("#warning-message2").css('display','none');
+                        $("#error-message2").css('display','block');
+                    }
+                    else
+                    {   
+                        document.location.href="http://localhost/stickmanABS/template/connected-index.php";
+                    }
+                         // J'affiche cette réponse
                 }
             });
         }
