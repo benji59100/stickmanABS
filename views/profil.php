@@ -81,11 +81,14 @@
         
         
       <hr>
-
-      <footer>
-        <p>&copy; StickMan Company 2016</p>
-      </footer>
-    </div> <!-- /container -->      
+    </div>
+        <div class="container">
+            <footer>
+                <p>&copy; StickMan Company 2016</p>
+            </footer>
+        </div>
+      
+     <!-- /container -->      
     <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
     <script src="../js/ajax.js"></script>
     <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
