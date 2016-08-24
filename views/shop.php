@@ -1,3 +1,6 @@
+<?php 
+    include ('data_views/data_shop.php');
+ ?>
 <html>
     <head>
         
@@ -12,33 +15,21 @@
         <div id="shop">
             <h1>ICI LE MAGASIN</h1>
             <div id="container" class="row">
-                <div  class="item col-md-3 col-md-offset-1">
-                    <h2>Name</h2>
-                    <img  src="../img/shop/red_potion.png" alt="red_potion">
+                <?php 
+                foreach ($resultat as $row){ ?>
+                
+                    <div  class="item col-md-3 col-md-offset-1">
+                    <h3><?php echo $row['Name'] ?></h3>
+                    <img  src="../img/shop/<?php echo $row['Name']?>.png" alt=<?php echo $row['Name']?>>
                     <div class="box ">
-                        <button class="button button--naira button--border-medium button--round-l button--text-thick button--inverted"><i class="button__icon glyphicon glyphicon-shopping-cart">10</i><span>Acheter</span></button>
+                        <button class="button button--naira button--border-medium button--round-l button--text-thick button--inverted"><i class="button__icon glyphicon glyphicon-shopping-cart"><?php echo $row['Value'] ?></i><span>Acheter</span></button>
                     </div>
                 </div>
-                <div  class="item col-md-3 col-md-offset-1">
-                    <h2>Name</h2>
-                    <img  src="../img/shop/force_potion.png" alt="force_potion">
-                </div>
-                <div  class="item col-md-3 col-md-offset-1">
-                    <h2>Name</h2>
-                    <img  src="../img/shop/blue_potion.png" alt="blue_potion">
-                </div>
-                <div  class="item col-md-3 col-md-offset-1">
-                    <h2>Name</h2>
-                    <img  src="../img/shop/red_potion.png" alt="red_potion">
-                </div>
-                <div  class="item col-md-3 col-md-offset-1">
-                    <h2>Name</h2>
-                    <img  src="../img/shop/force_potion.png" alt="force_potion">
-                </div>
-                <div  class="item col-md-3 col-md-offset-1">
-                    <h2>Name</h2>
-                    <img  src="../img/shop/blue_potion.png" alt="blue_potion">
-                </div>
+                    
+                <?php    
+                }
+                ?>
+  
                 
             </div>
         </div>
