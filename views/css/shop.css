@@ -8,6 +8,22 @@ and open the template in the editor.
     Author     : Clyde
 */
 
+#container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ 
+}
+
 .item{
-    border: 2px solid black;
+    border: 2px solid black;   
+    height: 250px;
+    margin-bottom: 7%;
+    
+    
+}
+.item img{
+    
+    
 }
