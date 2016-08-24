@@ -18,12 +18,13 @@ and open the template in the editor.
 
 .item{
     border: 2px solid black;   
-    height: 250px;
+    height: 270px;
     margin-bottom: 7%;
     
     
 }
 .item img{
     
-    
+    padding: 10px 50px 10px 50px;
 }
+
