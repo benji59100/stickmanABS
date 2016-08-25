@@ -5,7 +5,6 @@ error_reporting();
 
     session_start();
     $id = $_SESSION['id'];
-    var_dump($id);
 
     function getStat($connect, $id) {
         
@@ -35,6 +34,8 @@ error_reporting();
     }
 
     $stat = getStat($connexion,$id);
+    var_dump($stat);
+
 
     /*$i = 0;
     foreach($stat as $row)

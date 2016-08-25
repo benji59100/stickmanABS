@@ -18,7 +18,6 @@ class cStickman
 	function __construct($id_compte, $id_champion, $Name, $Strengh, $Life, $Points, $Victories, $ActionPoint, $MovePoint, $Defeats)
 	{
         $id_compte = $SESSION['id'];
-        /* $id_champion a recup de data_profil dans le row */
 		$Name = $sName;
         $aovAttributes{
             
@@ -30,9 +29,6 @@ class cStickman
         $MovePoint = $iMovePoint;
         $Victories = $iVictories;
         $Defeats = $iDefeats;
-        
-        
-        
 	}
 
 	public function move($iX,$iY)
