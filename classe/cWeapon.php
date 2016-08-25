@@ -8,8 +8,8 @@
 		public $iDamage;
 		function __construct($id,$effect)
 		{
-			$idWeapon = $id;
-            $iDamage = $effect;
+			$id = $idWeapon;
+            $effect = $iDamage;
 		}
 
 		public function shot($iIdStickman)
