@@ -6,9 +6,10 @@
 	{
 		public $iIdWeapon;
 		public $iDamage;
-		function __construct()
+		function __construct($id,$effect)
 		{
-			# code...
+			$idWeapon = $id;
+            $iDamage = $effect;
 		}
 
 		public function shot($iIdStickman)

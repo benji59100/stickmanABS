@@ -77,42 +77,40 @@
                 <img src="../img/profil/stickman.jpg" class="stickman">
                 <div class="pseudo">
                     <!-- recherche de pseudo dans la bdd !-->
+                    <?php echo $row['Name']; ?>
                 </div>
             </div>
             <div class="stat">
                 <div class="left-side-stat">
                     <!-- coté gauche, récuperer chaque info de la bdd !-->
                     <div id="life">
-                        Life:
+                        Life: <?php echo $row['Life']; ?>
                     </div>
                     <div id="actionpt">
-                        Action Point:
+                        Action Point: <?php echo $row['ActionPoint']; ?>
                     </div>
                     <div id="movept">
-                        Move Point:
+                        Move Point: <?php echo $row['MovePoint']; ?>
                     </div>
                 </div>
                 <div class="right-side-stat">
                     <!-- coté droit !-->
                     <div id="points">
-                        Points:
-                    </div>
-                    <div id="??">
-                        not defined yet!!
+                        Points: <?php echo $row['Points']; ?>
                     </div>
                     <div id="strengh">
-                        Strengh:
+                        Strengh: <?php echo $row['Strengh']; ?>
                     </div>
                 </div>
                 <div class="bot-side">
                     <!-- coté bas !-->
                     <div class="victories">
                         <!-- victories!-->
-                        Victories:
+                        Victories: <?php echo $row['Victories']; ?>
                     </div>
                     <div class="defeats">
                         <!-- defeats!-->
-                        Defeats:
+                        Defeats: <?php echo $row['Defeats']; ?>
                     </div>
                 </div>
             </div>
