@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
+-- version 4.5.5.1
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 25 Août 2016 à 19:59
--- Version du serveur :  10.1.13-MariaDB
--- Version de PHP :  5.5.37
+-- Généré le :  Jeu 25 Août 2016 à 21:48
+-- Version du serveur :  5.7.11
+-- Version de PHP :  5.6.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -69,7 +69,8 @@ INSERT INTO `compte` (`idCompte`, `Username`, `Password`, `Pseudo`, `Email`) VAL
 (1, 'test', 'test', 'test1', 'test@ggrgrfgr'),
 (5, 'test2', 'zrertzert', 'test2', 'test2@ggrgrfgr'),
 (6, 'adminc', '6f1bdb83ff15dbd1870998fa59801e0a', 'Funkeal', 'adminc@adminc'),
-(8, 'test3', '1879ddcf8bdd7079a1ea10d25e270e1c', 'test3', 'rffe@gsg');
+(16, 'ben', '73675debcd8a436be48ec22211dcf44fe0df0a64', 'ben', 'ben@gmail.com'),
+(17, 'test3', '3ebfa301dc59196f18593c45e519287a23297589', 'test3', 'test3@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -94,17 +95,19 @@ CREATE TABLE `items` (
   `Name` varchar(45) NOT NULL,
   `Value` int(11) NOT NULL,
   `Effect` int(11) NOT NULL,
-  `Description` varchar(45) NOT NULL
+  `Description` varchar(2500) NOT NULL,
+  `type` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `items`
 --
 
-INSERT INTO `items` (`idItem`, `Name`, `Value`, `Effect`, `Description`) VALUES
-(1, 'Health Potion', 100, 1, '+100 Hp'),
-(2, 'Action Potion', 200, 2, '+5 Pa'),
-(3, 'Movement Potion', 200, 3, '+5 Pm');
+INSERT INTO `items` (`idItem`, `Name`, `Value`, `Effect`, `Description`, `type`) VALUES
+(1, 'Health Potion', 100, 1, '+100 Hp', 'weed'),
+(2, 'Action Potion', 200, 2, '+5 Pa', 'weed'),
+(3, 'Movement Potion', 200, 3, '+5 Pm', 'weed'),
+(4, 'Broken Sword', 50, 50, 'A cute useless broken sword that make you thing that you\'re a true warrior but... your not ! ', 'weapon');
 
 -- --------------------------------------------------------
 
@@ -158,7 +161,7 @@ ALTER TABLE `champion`
 -- AUTO_INCREMENT pour la table `compte`
 --
 ALTER TABLE `compte`
-  MODIFY `idCompte` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idCompte` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT pour la table `inventory`
 --
@@ -168,7 +171,7 @@ ALTER TABLE `inventory`
 -- AUTO_INCREMENT pour la table `items`
 --
 ALTER TABLE `items`
-  MODIFY `idItem` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idItem` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
