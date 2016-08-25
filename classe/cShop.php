@@ -9,15 +9,21 @@ class cShop
 	public $aovItemsWeed = array();
 	public $aovAttributes = array();
 
-	public function __construct($tableau)
+	public function __construct($tableauWeapons,$tableauWeed)
     {
         
-        $this->aovItemsWeed = $tableau;
+        $this->aovItemsWeed = $tableauWeed;
+        $this->aovItemsWeapons = $tableauWeapons;
     }
 
-    public function getItems($name,$price)
+    public function getItemsWeed()
     {
         return $this->aovItemsWeed;
+    }
+
+    public function getItemsWeapons()
+    {
+        return $this->aovItemsWeapons;
     }
 
     public function setItemName($name)

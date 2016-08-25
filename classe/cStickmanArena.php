@@ -20,9 +20,9 @@ class cStickmanArena
 		$iMinStickman=8;
 		$i=0;
 		$j=0;
-		foreach($i>=24;$i++)
+		foreach($i>=$iSizeArenaWidth;$i++)
 		{
-			foreach($j>=24;$i++)
+			foreach($j>=$iSizeArenaHeight;$i++)
 			{
 				$cell[$i][$j] = new cCell($i,$j);
 				//tryng something

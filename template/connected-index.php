@@ -54,7 +54,7 @@
                 <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Creer Stickman</button></div>
                 <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Rejoindre arene</button></div>
                 <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Profil</button></div>
-                <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Shop</button></div>
+                <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><a href="../views/shop.php" class="btn btn-success">Shop</a></div>
             </div>
         </div>
     </nav>
