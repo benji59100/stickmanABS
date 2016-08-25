@@ -1,4 +1,6 @@
-<?php 
+<?php
+ define('ROOT_DIR', 'C:/wamp64/www/stickmanABS/');
+ include(ROOT_DIR.'includes/ini.php');
 
 class cCell
 {
@@ -11,6 +13,8 @@ class cCell
 	{
 		$this->iPosX=$a;
 		$this->iPosY=$b;
+
+
 	}
 
 	public function getCellItems()
@@ -27,6 +31,9 @@ class cCell
 		return $this->aoStickmen;
 	}
 }
+
+$cell = new cCell();
+var_dump($cell);
 
 
 ?>
