@@ -1,5 +1,5 @@
 <?php
-include '../includes/ini.php';
+include(ROOT_DIR.'includes/ini.php');
 /**
 * 
 */
@@ -9,23 +9,15 @@ class cShop
 	public $aovItemsWeed = array();
 	public $aovAttributes = array();
 
-
-	public function __construct($idPotion)
+	public function __construct($tableau)
     {
-        // Récupérer en base de données les infos du membre
-        $data_shop = $connexion->prepare("SELECT * FROM items");
-        $data_shop->execute();
-        $resultat = $data_shop->fetchAll();
-
-        // Définir les variables avec les résultats de la base
-        $this->name = $resultat['Name'];
-        $this->value = $resultat['Value'];
-        // etc.
+        
+        $this->aovItemsWeed = $tableau;
     }
 
-    public function setItem($name,$price)
+    public function getItems($name,$price)
     {
-
+        return $this->aovItemsWeed;
     }
 
     public function setItemName($name)
@@ -48,10 +40,8 @@ class cShop
 
     }
 
-	public function Buy()
-	{
-		//acheter un objet
-	}
 }
 
+
+        
 ?>

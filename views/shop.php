@@ -16,10 +16,10 @@
             <h1>ICI LE MAGASIN</h1>
             <div id="container" class="row">
                 <?php 
-                foreach ($resultat as $row){ ?>
+                foreach ($objetmagasin as $row){ ?>
                 
                     <div  class="item col-md-3 col-md-offset-1">
-                    <h3><?php echo $row['Name'] ?></h3>
+                    <h3><?php echo $row['Name']; ?></h3>
                     <img  src="../img/shop/<?php echo $row['Name']?>.png" alt=<?php echo $row['Name']?>>
                     <div class="box ">
                         <button class="button button--naira button--border-medium button--round-l button--text-thick button--inverted"><i class="button__icon glyphicon glyphicon-shopping-cart"><?php echo $row['Value'] ?></i><span>Acheter</span></button>

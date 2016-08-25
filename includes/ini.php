@@ -1,12 +1,6 @@
 <?php 
-
-include("constante.php");
-function __autoload($class_name) {
-
-
-    
-}
-
+define('ROOT_DIR', 'C:/wamp64/www/stickmanABS/');
+include(ROOT_DIR."includes/constante.php");
  
  echo 'passe dans le ini.php';
  echo '<br>';

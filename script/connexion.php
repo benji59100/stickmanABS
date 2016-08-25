@@ -1,5 +1,6 @@
 <?php 
-include("../includes/ini.php");
+define('ROOT_DIR', 'C:/wamp64/www/stickmanABS/');
+include(ROOT_DIR.'includes/ini.php');
 
 if((isset($_POST['login'],$_POST['pwd'])) && ($_POST['login'] !="" || $_POST['pwd']!= ""))
 {

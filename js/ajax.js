@@ -66,6 +66,7 @@ $(document).ready(function() {
                 data: $this.serialize(),
                 dataType:'json', // Je sérialise les données (j'envoie toutes les valeurs présentes dans le formulaire)
                 success: function(html) { // Je récupère la réponse du fichier PHP
+                    console.log('test');
                     if(html.reponse == "echec")
                     {
                         console.log('echec');
