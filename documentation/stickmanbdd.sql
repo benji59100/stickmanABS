@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 25 Août 2016 à 10:08
+-- Généré le :  Jeu 25 Août 2016 à 19:59
 -- Version du serveur :  10.1.13-MariaDB
--- Version de PHP :  7.0.8
+-- Version de PHP :  5.5.37
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -30,9 +30,22 @@ CREATE TABLE `champion` (
   `id_champion` int(11) NOT NULL,
   `id_compte` int(11) NOT NULL,
   `Name` varchar(45) NOT NULL,
+  `Strengh` int(11) NOT NULL,
+  `Life` int(11) NOT NULL,
+  `Point` int(11) NOT NULL,
+  `ActionPoint` int(11) NOT NULL,
+  `MovePoint` int(11) NOT NULL,
   `Victories` int(11) NOT NULL,
   `Defeats` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `champion`
+--
+
+INSERT INTO `champion` (`id_champion`, `id_compte`, `Name`, `Strengh`, `Life`, `Point`, `ActionPoint`, `MovePoint`, `Victories`, `Defeats`) VALUES
+(1, 3, 'Patrick', 100, 100, 100, 0, 0, 100, 100),
+(3, 2, 'Robert', 100, 100, 100, 0, 0, 100, 100);
 
 -- --------------------------------------------------------
 
@@ -140,7 +153,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT pour la table `champion`
 --
 ALTER TABLE `champion`
-  MODIFY `id_champion` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_champion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `compte`
 --
