@@ -12,7 +12,7 @@
 			$this->iIdPotion = $id;
 			$this->iHeal = $effect;
 			$this->sName=$name;
-			$this->
+			$this->iPrice = $price;
 		}
 
 		public function bong()

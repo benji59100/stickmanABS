@@ -1,5 +1,8 @@
-<?php 
-include("../includes/ini.php");
+<?php
+error_reporting(0);
+
+define('ROOT_DIR', 'C:/wamp64/www/stickmanABS/');
+include(ROOT_DIR.'includes/ini.php');
 
 if(isset($_POST['username'],$_POST['password'],$_POST['pseudo'],$_POST['email']))
 {
@@ -14,14 +17,16 @@ if(isset($_POST['username'],$_POST['password'],$_POST['pseudo'],$_POST['email'])
         
         $verif = $connexion->prepare("SELECT * FROM compte WHERE Username = '$username' OR Pseudo = '$pseudo' OR Email = '$email'");
         $verif->execute();
-        $resultat = $verif->fetchAll();        
+        $resultat = $verif->fetchAll();
+
+
         
         if(count($resultat) != 0){
            
             $reponse = 'echec';
         }
         else{
-        $reqInscription = $connexion->prepare("INSERT INTO compte VALUES ('', '$username', '$password', '$pseudo', '$email')");        
+        $reqInscription = $connexion->prepare("INSERT INTO compte (Username,Password,Pseudo,Email) VALUES ('$username', '$password', '$pseudo','$email')");        
         $reqInscription->execute();
         $reponse = 'ok'; 
         }

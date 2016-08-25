@@ -42,7 +42,7 @@
           
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-              <form id="form-deconnexion" class="navbar-form navbar-right" action="script/deconnexion.php" method="post" role="form">
+              <form id="form-deconnexion" class="navbar-form navbar-right" action="../script/deconnexion.php" method="post" role="form">
                 <button type="submit" class="btn btn-success">Disconnect</button>
               </form>
             </div><!--/.navbar-collapse -->
