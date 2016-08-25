@@ -7,11 +7,24 @@ class cCell
 	public $aovItems =	array(); //Items présent sur la cellule
 	public $aoStickmen	= array(); //Stickmen présent sur la cellule
 
-	function __contruct($a,$b)
+	public function __contruct($a,$b)
 	{
 		$this->iPosX=$a;
 		$this->iPosY=$b;
+	}
 
+	public function getCellItems()
+	{
+		return $this->aovItems;
+	}
+
+	public function setCellItems()
+	{
+		
+	}
+	public function getCellSticman()
+	{
+		return $this->aoStickmen;
 	}
 }
 
