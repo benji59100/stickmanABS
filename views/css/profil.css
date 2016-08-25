@@ -1,32 +1,165 @@
-body{
-  margin-top: 50px;
+.box-profil{
+    
+    position: absolute;
+    background-color:darkslategray;
+    padding: 2%;
+    height: 800px;
+    width: 60%;
+    border-width: 2px;
+    border-style: solid;
+    border-color:aliceblue;
 }
 
-.divide-nav{
-  height: 50px;
-  background-color: #428bca;
+.stickman-picture{
+    
+    position: absolute;
+    background-color: white;
+    margin-left: 2%;
+    border-width: 2px;
+    border-style: solid;
+    border-color:aliceblue;
+    width:205px;
+    height:255px;
+    
 }
 
-.divide-text{
-    color:#fff;
-    line-height: 20px;
-    font-size:20px;
-    padding: 15px 0;
+.stickman{
+    
+    left:0%;
+    top:0%;
+    width:200px;
+    height:250px;
 }
 
-.affix {
-  top: 50px;
-  width:100%;
+.pseudo{
+    
+    margin-bottom: 1%;
+    left: center;
 }
 
-.filler{
-  min-height: 2000px;
+.stat{
+    
+    position: absolute;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color:aliceblue;
+    right: 15%;
+    margin-top: 2%;
+    width:350px;
+    height:210px;
 }
 
-.navbar-form {
-   padding-left: 0;
+.left-side-stat{
+    
+    position: absolute;
+    background-color: white;
+    left: 2%;
+        
 }
 
-.navbar-collapse{
-   padding-left:0; 
+.right-side-stat{
+    
+    position: absolute;
+    background-color: white;
+    right: 10%;
+    
 }
+
+.bot-side{
+    
+    position: absolute;
+    background-color: white;
+    bottom: 15%;
+    width:330px;
+    height: 40px;
+    
+    
+}
+
+.victories{
+    
+    position:absolute;
+    background-color: white;
+    left: 8%;
+            
+}
+
+.defeats{
+    
+    position:absolute;
+    background-color: white;
+    right: 20%;
+    
+}
+
+.inventory {
+    
+    position: absolute;
+    background-color: white;
+    bottom: 2%;
+    width: 1082px;
+    height: 450px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:aliceblue;
+}
+
+.case {
+    position: absolute;
+    background-color: white;
+    width: 135px;
+    height: 112.5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:aliceblue;
+}
+
+
+
+.case1, .case9, .case17, .case25{
+    left: 135px;
+    
+}
+.case2, .case10, .case18, .case26 {
+    left: 270px;
+    
+}
+.case3, .case11, .case19, .case27 {
+    left: 405px;
+    
+}
+.case4, .case12, .case20, .case28 {
+    left: 540px;
+    
+}
+.case5, .case13, .case21, .case29 {
+    left: 675px;
+    
+}
+.case6, .case14, .case22, .case30 {
+    left: 810px;
+    
+}
+.case7, .case15, .case23, .case31 {
+    left: 945px;
+    
+}
+
+
+.case8, .case9, .case10, .case11, .case12, .case13, .case14, .case15 {
+    top: 112.5px;
+    
+}
+
+.case16, .case17, .case18, .case19, .case20, .case21, .case22, .case23 {
+    top: 225px;
+}
+
+.case24, .case25, .case26, .case27, .case28, .case29, .case30, .case31 {
+    top: 337.5px;
+}
+
+
+
+
