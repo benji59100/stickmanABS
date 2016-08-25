@@ -6,7 +6,7 @@
 	class cStrength
 	{
 		
-		function __construct()
+		function __construct($Strengh)
 		{
 			# code...
 		}
