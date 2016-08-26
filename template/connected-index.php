@@ -20,8 +20,19 @@
         </style>
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="/css/profil.css">
-        <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'> <!-- google font font-family: 'Kalam', cursive;-->
+        <link rel="stylesheet" href="../views/css/profil.css">
+        <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'>
+
+        <!-- head du magasin !--> 
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="../views/css/shop.css">
+        <link rel="stylesheet" href="../views/css/buttons.css">
+        <link rel="stylesheet" href="../views/css/base.css">
+        <link rel="stylesheet" href="../views/css/normalize.css">
+        <link rel="stylesheet" href="../views/css/vicons-font.css">
+
+        <!-- fin head du magasin !-->
 
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -53,8 +64,8 @@
             <div class="row">
                 <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Creer Stickman</button></div>
                 <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Rejoindre arene</button></div>
-                <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button class="btn btn-success">Profil</button></div>
-                <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><a href="../views/shop.php" class="btn btn-success">Shop</a></div>
+                <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button id="btn-profil" class="btn btn-success">Profil</button></div>
+                <div class="col-xs-6 col-md-3" style="display:inline-block;margin-top:0.5%;"><button id ="btn-shop" class="btn btn-success">Shop</a></div>
             </div>
         </div>
     </nav>
@@ -63,14 +74,15 @@
             <div class="filler"></div>
         </div>
     </div>
-        
-    
     <!-- Main jumbotron for a primary marketing message or call to action -->
     
     <div class="container">
-      <!-- Example row of columns -->    
-        
-        
+    <div style="display:none;" id="shop">
+    <?php include('../views/shop.php');?>
+    </div>
+    <div id="profil">
+    <?php include('../views/profil.php');?>
+    </div>
       <hr>
     </div>
         <div class="container">
@@ -87,6 +99,7 @@
     <script src="../js/vendor/bootstrap.min.js"></script>
 
     <script src="../js/main.js"></script>
+    <script src="../js/connected-index.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

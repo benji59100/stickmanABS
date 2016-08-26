@@ -1,18 +1,6 @@
 <?php 
     include_once ('data_views/data_shop.php');
  ?>
-<html>
-    <head>
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/shop.css">
-        <link rel="stylesheet" href="css/buttons.css">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/vicons-font.css">
-    </head>
-    <body>
-        <div id="shop">
             <h1>Bienvenue dans le magasin <?php echo $_SESSION['pseudo'];?> !</h1>
             <div id="container" class="row">
                 <h2>Item !</h2>
@@ -44,6 +32,3 @@
                 }
                 ?>
             </div>
-        </div>
-    </body>
-</html>

@@ -2,7 +2,6 @@
 error_reporting(0);
 
     session_start();
-    var_dump($_SESSION);
 	define('ROOT_DIR', 'C:/wamp64/www/stickmanABS/');
     include_once ROOT_DIR.'includes/ini.php';
     include_once ROOT_DIR.'classe/cShop.php';
