@@ -1,0 +1,12 @@
+.box-arene {
+    
+    position: absolute;
+    background-color:darkslategray;
+    padding: 2%;
+    height: 800px;
+    width: 60%;
+    border-width: 2px;
+    border-style: solid;
+    border-color:aliceblue;    
+    
+}

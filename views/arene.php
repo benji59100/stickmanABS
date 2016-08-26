@@ -70,10 +70,13 @@
     <div class="container">
       <!-- CONTENUE DE LA PAGE -->
       
+        <div class="box-arene">
+        
+                
         
         
         
-        
+        </div>    
         
         
         <!-- FIN DE CONTENUE DE LA PAGE -->

@@ -33,12 +33,27 @@ class cStickman
 
 	public function move($iX,$iY)
 	{
-		//se déplacer aux coordonées
+		$posStickman = $this->getCellSticman();
+        if($iX - $posStickman[0] && $iY - $posStickman[1] <= 5) {
+            
+            $afterMoveX = $iX;
+            $afterMoveY = $iY;
+            
+        }else{
+            return ERROR;
+        }
 	}
 
 	public function look()
 	{
-		//regarde sur la cellule ce qui est présent
+		$posItems = $this->getCellItems();
+        $posStickman = $this->getCellSticman();
+        if( $posItems[0] == $posStickman[0] && $posItems[1] == $posStickman[1]) {
+            
+            
+        }else{
+            return ERROR;
+        }
 	}
 
 	public function protect()

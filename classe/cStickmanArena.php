@@ -32,12 +32,19 @@ class cStickmanArena
 
 	public function SpawnStickmen()
 	{
-		//définit le point de spawn des stickmen
+        $currentNbStickmanArena = count($aovStickmen);
+		mixed array_rand ( array cell[$i][$j], int $num = $currentNbStickmanArena)
 	}
 
 	public function SpawnItems()
 	{
-		//spawn les items dans l'arène sur les cellules
+        $minItems = 0;
+        $maxItems = 5;
+        $randWeed = rand($minItems,$maxItems);
+        $randweapons = rand($minItems,$maxItems);
+        /* Manque l'appel de d'objet de weed et weapons (les cell ont juste été choisis) */
+		mixed array_rand ( array cell[$i][$j], int $num = $randWeed);
+        mixed array_rand ( array cell[$i][$j], int $num = $randweapons);
 	}
 
 	public function getMaxWeaponStrength()
@@ -45,9 +52,31 @@ class cStickmanArena
 		//retourne la valeur maximal de la force de l'arme
 	}
 
-	public function isFull()
+	public function isFull($nbStickman)
 	{
-		//l'arène est complète( joueur max atteint)
+        $currentNbStickmanArena = count($aovStickmen);
+		if( $currentNbStickmanArena == $iMaxStickman) {
+            
+            return TRUE;
+            
+        }else {
+            
+            return FALSE;
+        }
 	}
+    
+    pubic function isMin($nbStickman)
+    {
+        $currentNbStickmanArena = count($aovStickmen);
+        if( $currentNbStickmanArena == $iMinStickman) {
+            
+            return TRUE;
+            
+        }else {
+            
+            return FALSE;
+        }
+        
+    }
 }
 ?>
