@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+error_reporting();
 
     session_start();
 	define('ROOT_DIR', 'C:/wamp64/www/stickmanABS/');

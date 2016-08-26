@@ -5,28 +5,32 @@
 */
 class cStickman
 {
-	
+	public $id;
+	public $id_champion;
 	public $aovItems = array();
 	public $aovAttributes = array();
 	public $iActionPoint= 0;
 	public $iMovePoint = 0;
 	public $iPoints = 0 ;
 	public $sName;
-	public $iVictories = 0;
-	public $iDeafeats = 0;
-        public $Life = 5;
-        public $Strengh = 1;
+	public $iVictories;
+	public $iDeafeats;
+    public $Life;
+    public $Strength;
 
-	function __construct($id_compte, $id_champion, $Name, $Strengh, $Life, $Points, $Victories, $ActionPoint, $MovePoint, $Defeats)
+	function __construct($id_compte,$Name,$idChampion='',$Strength=1, $Life=5, $Points=0, $Victories=0, $ActionPoint=0, $MovePoint=0,$Defeats=0)
 	{
-        $id_compte = $SESSION['id'];
-		$Name = $sName;
-        $aovAttributes = [$Strengh,$Life];
-        $Points = $iPoints;
-        $ActionPoint = $iActionPoint;
-        $MovePoint = $iMovePoint;
-        $Victories = $iVictories;
-        $Defeats = $iDefeats;
+		$this->id_champion = $idChampion;
+		$this->id = $id_compte;
+		$this->sName = $Name;
+        $aovAttributes = [$Strength,$Life];
+        $this->iPoints = $Points;
+        $this->iActionPoint = $ActionPoint;
+        $this->iMovePoint = $MovePoint;
+        $this->iVictories = $Victories;
+        $this->iDeafeats = $Defeats;
+        $this->Life = $Life;
+        $this->Strength = $Strength;
 	}
 
 	public function move($iX,$iY)

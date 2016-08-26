@@ -1,9 +1,9 @@
 <?php
-error_reporting();
+error_reporting(0);
+    require('../classe/cStickman.php');
 	define('ROOT_DIR', 'C:/wamp64/www/stickmanABS/');
     include ROOT_DIR.'includes/ini.php';
 
-    session_start();
     $id = $_SESSION['id'];
 
     function getStat($connect, $id) {
@@ -34,7 +34,21 @@ error_reporting();
     }
 
     $stat = getStat($connexion,$id);
-    var_dump($stat);
+    var_dump($stat[0]['id_champion']);
+    $idChampion = $stat['id_champion'];
+    $idcompteChampion = $stat['id_compte'];
+    $nameChampion = $stat['Name'];
+    $strengthChampion = $stat['Strength'];
+    $lifeChampion = $stat['Life'];
+    $pointsChampion = $stat['Point'];
+    $actionPointsChampion = $stat['ActionPoint'];
+    $movePointChampion = $stat['MovePoint'];
+    $victoriesChampion = $stat['Victories'];
+    $defeatsChampion = $stat['Defeats']; 
+    //$stickman = new cStickman($idcompteChampion,$idChampion,$nameChampion,$strengthChampion,$lifeChampion);
+    //function __construct($id_compte, $id_champion, $Name, $Strengh, $Life, $Points, $Victories, $ActionPoint, $MovePoint, $Defeats)
+
+    
 
 
 ?>
