@@ -8,22 +8,20 @@ class cStickman
 	
 	public $aovItems = array();
 	public $aovAttributes = array();
-	public $iActionPoint;
-	public $iMovePoint;
-	public $iPoints;
+	public $iActionPoint= 0;
+	public $iMovePoint = 0;
+	public $iPoints = 0 ;
 	public $sName;
-	public $iVictories;
-	public $iDeafeats;
+	public $iVictories = 0;
+	public $iDeafeats = 0;
+        public $Life = 5;
+        public $Strengh = 1;
 
 	function __construct($id_compte, $id_champion, $Name, $Strengh, $Life, $Points, $Victories, $ActionPoint, $MovePoint, $Defeats)
 	{
         $id_compte = $SESSION['id'];
 		$Name = $sName;
-        $aovAttributes{
-            
-            $Strengh,
-            $Life,            
-        }
+        $aovAttributes = [$Strengh,$Life];
         $Points = $iPoints;
         $ActionPoint = $iActionPoint;
         $MovePoint = $iMovePoint;
@@ -56,7 +54,7 @@ class cStickman
 		//récupèr eun item en fonction de son ID et l'ajoute dans l'inventaire
 	}
 
-	public function use($iIdItem)
+	public function useitem($iIdItem)
 	{
 		//utilise un item
 	}

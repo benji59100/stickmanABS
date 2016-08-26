@@ -12,6 +12,7 @@
         <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/newchamp.css">
         <style>
             body {
                 padding-top: 50px;
@@ -67,10 +68,22 @@
     
     <!-- Main jumbotron for a primary marketing message or call to action -->
     
-    <div class="container">
+    <div class="newChamp">
       <!-- CONTENUE DE LA PAGE -->
       
-        
+      <div class="champ row">
+          <div class="imgChamp col-md-6">
+            <img src="../img/profil/stickman.jpg" class="stickman">
+          </div>
+          <div class="nameChamp col-md-6">
+              <h3>Name : </h3>
+              <form id="form-newStickman" class="" action="data_views/data_newChamp.php" method="post" role="form">
+                  <input class="marginBot"type="text" required="" name="stickmanName">
+              
+              <button type="submit" class="btn btn-success">Start Now</button>
+              </form>
+          </div>
+      </div>  
         
         
         
