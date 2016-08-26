@@ -37,11 +37,4 @@ error_reporting();
     var_dump($stat);
 
 
-    /*$i = 0;
-    foreach($stat as $row)
-    {
-    	var_dump($row);
-    }*/
-
-
 ?>
