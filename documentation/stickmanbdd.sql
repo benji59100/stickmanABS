@@ -106,8 +106,8 @@ CREATE TABLE `items` (
 INSERT INTO `items` (`idItem`, `Name`, `Value`, `Effect`, `Description`, `type`) VALUES
 (1, 'Health Potion', 100, 1, '+100 Hp', 'weed'),
 (2, 'Action Potion', 200, 2, '+5 Pa', 'weed'),
-(3, 'Movement Potion', 200, 3, '+5 Pm', 'weed'),
-(4, 'Broken Sword', 50, 50, 'A cute useless broken sword that make you thing that you\'re a true warrior but... your not ! ', 'weapon');
+(3, 'Movement Potion', 200, 3, '+5 Pm', 'weed');
+-- (4, 'Broken Sword', 50, 50, 'A cute useless broken sword that make you thing that you\'re a true warrior but... your not ! ', 'weapon');
 
 -- --------------------------------------------------------
 
